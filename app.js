@@ -36,43 +36,36 @@
 // console.log(numbersArray);
 // console.log(numbersArray.indexOf(90));
 
-let  numbersArray=[10,20,30,40,50,60,70,80];
+// 
 
-body="[ ";
-for(let number of numbersArray){
-    body +=number +`  `
-}
-body +=` ]`;
-console.log(body);
+//===========Methods ===
 
-document.getElementById("arraydisplay").innerHTML=body;
 
-function change(){
-    let number1 = document.getElementById("field1").value;
 
-    //console.log(number1);
+// function getSum( num1, num2){
+//     return num1 + num2;
+// }
 
-    let index = numbersArray.indexOf(parseInt(number1));
-    console.log(index);
+//  let getSum = function(num1,num2){
+//      return num1+num2;
+//  }
 
-    let number2 = document.getElementById("field2").value;
+//arrow functions or lambda expressions
+// let getSum = (num1,num2) => {
+//     return num1+num2;
+// }
 
-    numbersArray[index]=parseInt(number2);
+// let getSum = num1 => {
+//     return num1;
+// }
 
-    console.log(numbersArray);
+let getSum =num1 => num1;
 
-    updateArray();
-      
-}
- function updateArray(){
-    body="[ ";
-    for(let number of numbersArray){
-        body +=number +`  `
-    }
-    body +=` ]`;
 
-    document.getElementById("arraydisplay1").innerHTML=body;
- }
+console.log(getSum(20));
+
+
+
 
 
 
