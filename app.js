@@ -1,19 +1,19 @@
-console.log("Hi");
+// console.log("Hi");
 
-{
-    var name="Omalmi";
-    let age =21;
-}
+// {
+//     var name="Omalmi";
+//     let age =21;
+// }
 
-console.log(name);
+// console.log(name);
 
-let customerArray=["jasmine","patrick"];
-console.log(customerArray);
+// let customerArray=["jasmine","patrick"];
+// console.log(customerArray);
 
-customerArray="thiyesaa";
-console.log(customerArray);
+// customerArray="thiyesaa";
+// console.log(customerArray);
 
-const numbersArray =[10,20,30,90,50,60,990];
+// const numbersArray =[10,20,30,90,50,60,990];
 
 // console.log(numbersArray);
 
@@ -27,14 +27,52 @@ const numbersArray =[10,20,30,90,50,60,990];
 
 // console.log(numbersArray.toSorted());
 
-numbersArray.unshift(990);
+// numbersArray.unshift(990);
 
-console.log(numbersArray);
+// console.log(numbersArray);
 
-numbersArray.shift();
+// numbersArray.shift();
 
-console.log(numbersArray);
-console.log(numbersArray.indexOf(90));
+// console.log(numbersArray);
+// console.log(numbersArray.indexOf(90));
+
+let  numbersArray=[10,20,30,40,50,60,70,80];
+
+body="[ ";
+for(let number of numbersArray){
+    body +=number +`  `
+}
+body +=` ]`;
+console.log(body);
+
+document.getElementById("arraydisplay").innerHTML=body;
+
+function change(){
+    let number1 = document.getElementById("field1").value;
+
+    //console.log(number1);
+
+    let index = numbersArray.indexOf(parseInt(number1));
+    console.log(index);
+
+    let number2 = document.getElementById("field2").value;
+
+    numbersArray[index]=parseInt(number2);
+
+    console.log(numbersArray);
+
+    updateArray();
+      
+}
+ function updateArray(){
+    body="[ ";
+    for(let number of numbersArray){
+        body +=number +`  `
+    }
+    body +=` ]`;
+
+    document.getElementById("arraydisplay1").innerHTML=body;
+ }
 
 
 
