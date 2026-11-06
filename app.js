@@ -59,10 +59,20 @@
 //     return num1;
 // }
 
-let getSum =num1 => num1;
+// let getSum =num1 => num1;
 
+// console.log(getSum(20));
 
-console.log(getSum(20));
+const nameList = ["Saman","Wimal","Kamal","Sunimal"];
+
+// let loopArr=(Cname) => { 
+//     console.log(Cname);
+// }
+
+// nameList.forEach(loopArr); //call back function --> alling a funtcion inside another function
+
+nameList.forEach(Cname => console.log(Cname));
+
 
 
 
