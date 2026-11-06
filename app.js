@@ -73,12 +73,19 @@
 
 //nameList.forEach(Cname => console.log(Cname));
 
-const empSalary=[75000,30000,25000,90000,150000];
-const newEmpSlary=[];
+// const empSalary=[75000,30000,25000,90000,150000];
+// const newEmpSlary=[];
 
-empSalary.forEach(WSalary => newEmpSlary.push(parseInt(WSalary)*2));
+// empSalary.forEach(WSalary => newEmpSlary.push(parseInt(WSalary)*2));
 
-newEmpSlary.forEach(WorkerS => console.log(WorkerS));
+// newEmpSlary.forEach(WorkerS => console.log(WorkerS));
+
+const nameList=[`Saman`,`Wimal`,`Kamal`,`Sunimal`];
+
+const newNameList=nameList.map( wName => `Welcome `+wName );
+
+console.log(newNameList);
+
 
 
 
