@@ -63,7 +63,7 @@
 
 // console.log(getSum(20));
 
-const nameList = ["Saman","Wimal","Kamal","Sunimal"];
+//const nameList = ["Saman","Wimal","Kamal","Sunimal"];
 
 // let loopArr=(Cname) => { 
 //     console.log(Cname);
@@ -71,7 +71,14 @@ const nameList = ["Saman","Wimal","Kamal","Sunimal"];
 
 // nameList.forEach(loopArr); //call back function --> alling a funtcion inside another function
 
-nameList.forEach(Cname => console.log(Cname));
+//nameList.forEach(Cname => console.log(Cname));
+
+const empSalary=[75000,30000,25000,90000,150000];
+const newEmpSlary=[];
+
+empSalary.forEach(WSalary => newEmpSlary.push(parseInt(WSalary)*2));
+
+newEmpSlary.forEach(WorkerS => console.log(WorkerS));
 
 
 
