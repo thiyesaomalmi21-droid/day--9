@@ -65,9 +65,9 @@
 
 //const nameList = ["Saman","Wimal","Kamal","Sunimal"];
 
-// let loopArr=(Cname) => { 
-//     console.log(Cname);
-// }
+ let loopArr=(Cname) => { 
+     console.log(Cname);
+ }
 
 // nameList.forEach(loopArr); //call back function --> alling a funtcion inside another function
 
@@ -80,11 +80,65 @@
 
 // newEmpSlary.forEach(WorkerS => console.log(WorkerS));
 
-const nameList=[`Saman`,`Wimal`,`Kamal`,`Sunimal`];
+// const nameList=[`Saman`,`Wimal`,`Kamal`,`Sunimal`];
 
-const newNameList=nameList.map( wName => `Welcome `+wName );
+// const newNameList=nameList.map( wName => `Welcome `+wName );
 
-console.log(newNameList);
+// console.log(newNameList);
+
+const productList=[
+    {
+        id:1,
+        name :"MilkPacket",
+        price :780
+    },
+    {
+        id:2,
+        name :"Maggie",
+        price :350
+    },
+    {
+        id:3,
+        name :"Coffee",
+        price :1050
+    },
+    {
+        id:4,
+        name :"Cake",
+        price :650
+    },
+    {
+        id:5,
+        name :"fish",
+        price :450
+    }
+];
+
+console.log(productList);
+
+
+const UpdatedProduct = productList.map(product => {
+    let newProduct={
+        id:product.id,
+        name:product.name,
+        price:product.price*1.15
+
+    }
+    return newProduct;
+});
+
+console.log(UpdatedProduct);
+
+
+
+// function change(){
+//     Swal.fire({
+//   title: "Drag me!",
+//   icon: "success",
+//   draggable: true
+// });
+
+// }
 
 
 
